@@ -6,6 +6,7 @@ class PagesController < ApplicationController
   end
   
   def home
+    @courses = Course.where(public: true)
   end
   
 end
